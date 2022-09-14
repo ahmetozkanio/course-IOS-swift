@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alemdar" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-SA-f5E">
+                                <rect key="frame" x="47" y="153" width="320" height="304"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-8O-H97">
+                                <rect key="frame" x="47" y="510" width="320" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="25g-uY-UWn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRZ-SA-f5E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="FG2-xJ-hnO"/>
+                            <constraint firstItem="ha6-8O-H97" firstAttribute="top" secondItem="YRZ-SA-f5E" secondAttribute="bottom" constant="53" id="JYl-S8-J2M"/>
+                            <constraint firstItem="YRZ-SA-f5E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="KYQ-Tf-TfB"/>
+                            <constraint firstItem="YRZ-SA-f5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avR-WH-uuO"/>
+                            <constraint firstItem="YRZ-SA-f5E" firstAttribute="trailing" secondItem="ha6-8O-H97" secondAttribute="trailing" id="dVe-8N-nbq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ha6-8O-H97" secondAttribute="bottom" constant="317" id="r0D-4r-Lp6"/>
+                            <constraint firstItem="YRZ-SA-f5E" firstAttribute="leading" secondItem="ha6-8O-H97" secondAttribute="leading" id="sm1-2V-7pR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YRZ-SA-f5E" id="OIe-eE-FfZ"/>
+                        <outlet property="nameLabel" destination="ha6-8O-H97" id="VjA-sn-3RJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alemdar" width="244" height="207"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
